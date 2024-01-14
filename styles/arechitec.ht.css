@@ -8,6 +8,11 @@
     font-family: 'Open sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
+.text-light-gray{
+    /* ?font-size: 1rem; */
+    /* font-weight: 400; */
+    color: #727272;
+}
 
 .btn-primary {
     border-radius: 8px;
@@ -68,41 +73,16 @@ nav li a {
     color: #131313;
 }
 
-.banner-descripition {
-    font-size: 1rem;
-    font-weight: 400;
-    color: #727272;
-}
-
 .banner img{
     margin-top: 20px;
     width: 100%;
 }
-/* responsive media querise */
-/* mobile devices */
-@media screen and (max-width: 576px) {
-    header{
-        padding: 20px;
-        nav{
-            flex-direction: column;
-        }
-    }
-    
-}
-/* tablet or medium devices */
-@media screen and (min-width: 576px) and (max-width: 960px) {
-   header{
-    padding: 50px;
-   }
-    nav{
-        flex-direction: column;
-    }
-}
+
 
 /* main section styles */
 main{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 /* teams styles */
 .tems-container{
@@ -129,4 +109,35 @@ main{
     color: #FF900E;
     font-weight: 700; 
 
+}
+/* responsive media querise */
+/* mobile devices */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+
+        nav,
+        .tems-container 
+        
+        {
+            flex-direction: column;
+        }
+        .tems-img-container{
+            grid-template-columns: 1fr;
+        }
+        .tems-contant{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    
+/* tablet or medium devices */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+   header{
+    padding: 50px;
+   }
+    nav, .tems-container{
+        flex-direction: column;
+    }
 }
